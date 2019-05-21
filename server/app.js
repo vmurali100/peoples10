@@ -28,10 +28,9 @@ app.post("/login", (req, res) => {
     });
 });
 
-mongoose.connect(
-  "mongodb+srv://vmurali100:Pavani!23@cluster0-zxfcr.mongodb.net/test?retryWrites=true",
-  { useNewUrlParser: true }
-);
+mongoose.connect("mongodb://localhost:27017/users", {
+  useNewUrlParser: true
+});
 
 mongoose.connection.on("connected", () => {
   console.log("connected to database");

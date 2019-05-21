@@ -1,0 +1,10 @@
+Instructions :
+
+1. After Cloning the repositary 
+	1. GO to Server folder and use "npm instll" to download all the dependencies
+	2. Create a database name called "user" in your local MongoDB And insert a record with desired email and password
+	3. Replace the relavent port no in app.js line no 31
+	4. run "nodemon server.js". Your server is Live now
+	5. Go to Client folder and use "npm install" to download all the dependencies.
+	6. Use npm start to run the server .
+	7. In the login page use the email and password which you given when creating record . 
