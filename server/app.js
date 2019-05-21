@@ -11,19 +11,6 @@ app.get("/", (req, res) => {
   res.send("Hello World I am from MERN Test");
 });
 
-app.get("/:userId", (req, res) => {
-  const id = req.params.userId;
-  User.findById(id)
-    .exec()
-    .then(doc => {
-      console.log(doc);
-      res.status(200).json(doc);
-    })
-    .catch(error => {
-      console.log(error);
-      res.send(500);
-    });
-});
 app.post("/login", (req, res) => {
   User.find({ email: req.body.email, password: req.body.password })
     .exec()
